@@ -1,0 +1,221 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navbar {
+  width:max-content;
+  height: 17vh;
+  margin-left: 1.5%;
+  margin-right: 1.5%;
+  padding-top: 0.8%;
+  border-bottom: 1.5px solid #e0e0e0;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 20px;
+  justify-content: left;
+  align-items: center;
+}
+
+.search {
+  flex-grow: 1;
+  position: relative;
+  margin-top: 0px;
+  
+}
+
+.search input[type="text"] {
+  padding: 1vw 1vw 1vw 2vw; 
+  background-color: #e7e7e7;
+  margin-bottom: 5px;
+  font-size: 1.1vw;
+  border-radius: 20px;
+  width: 245%; /* Make the input take full width of the flex container */
+  border: 1px solid transparent;
+  text-align: center;
+  
+}
+
+.search input[type="text"]:focus {
+  outline: none; /* Remove default outline */
+  border: 1px solid transparent; /* Make border transparent on focus */
+  
+}
+
+.search_button {
+  position: absolute;
+  left: 15px; /* Positioning the search icon */
+  top: 45%;
+  transform: translateY(-50%);
+}
+
+.search_button button {
+  border: transparent;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.search_button i {
+  font-size: 1vw;
+  color: #888; /* Icon color */
+}
+
+.nav_items a {
+  
+  text-decoration: none;
+}
+
+
+/* Its For Explore , Advertise And  Get Unsplash+ */
+.nav_items3 {
+  display: flex;
+}
+.items a {
+  position: relative;
+  font-size: 1vw;
+  left: 32vw;
+  vertical-align:sub;
+  bottom: 0.5vh;
+  margin-inline: 14px;
+  color: #767676;
+
+  /* left: 250%; */
+}
+.vyi25 {
+  font-size: 1vw;
+  font-weight: 500;
+  width: 9vw;
+  height: 4.5vh;
+  border: 1px solid #767676;
+  border-radius: 2px;
+  background-color: #FFFFFF;
+}
+li a {
+  color: black;
+}
+.line {
+  padding: 0.06px;
+}
+.btn {
+  color: #767676;
+}
+
+
+.JMco7{
+  position: relative;
+  top: 2px;
+  background-color: transparent;
+  border: transparent;
+}
+.header{
+  font-size: 1.1vw;
+  position: absolute;
+  max-width: fit-content;
+  left: 3vh;
+  top: 13vh;
+}
+.header ul li{
+  color: #767676;
+
+}
+.header ul li:hover{
+  color: black;
+  cursor: pointer;
+}
+
+/* Main Content Started Here */
+.main_content{
+  margin-left: 36px;
+  margin-top: 52px;
+  width: max-content;
+}
+.main_content h1{
+  font-size: 3vw;
+}
+.main_content h4{
+  margin-top: 20px;
+  font-size: 1.3vw;
+  font-weight: lighter;
+}
+.main_content .images{
+
+  margin-top: 6%;
+
+}
+
+.images ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style-type: none;
+    padding: 0;
+  
+}
+
+.images ul li {
+  
+  width: 33px;
+  flex: 1 1 calc(25% - 20px); /* Adjust this percentage to control the number of items per row */
+ 
+  
+}
+.images ul li img{
+  
+  width: 100%;
+  height: 400px; /* Set a fixed height for all images */
+  object-fit: cover; /* Ensures the image covers the entire area while maintaining aspect ratio */
+
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+.images ul li:last-child {
+  
+  flex-grow: 10;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover; /* Ensures the image covers the entire area while maintaining aspect ratio */
+
+}
+
+
+
+@media (max-aspect-ratio: 1/1) {
+  .images ul li {
+    height: 30vh;
+  }
+}
+
+
+
+@media (max-height: 480px) {
+  .images ul li {
+    height: 80vh;
+  }
+}
+
+
+
+@media (max-aspect-ratio: 1/1) and (max-width: 480px) {
+  .images ul {
+    flex-direction: row;
+  }
+
+  .images ul li {
+    height: auto;
+    width: 100%;
+  }
+  img {
+    width: 100%;
+    max-height: 75vh;
+    min-width: 0;
+  }
+}
+
